@@ -10,7 +10,7 @@ pipeline {
       timestamps()
     }
   stages {
-    stages("create docker image") {
+    stage ("create docker image") {
       steps {
           echo "=== start building image ==="
           dir ('docker/toolbox') {
