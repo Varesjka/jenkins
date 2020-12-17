@@ -31,8 +31,7 @@ pipeline {
       steps {
           echo "=== start pushing image ==="
             sh 'docker push elzik/toolbox:latest . '
-          }
       }
     }
   }
-}  
+}
